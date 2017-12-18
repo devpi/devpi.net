@@ -1,0 +1,27 @@
+Farben:
+
+Grau:
+70 %Schwarz
+RGB 112 113 115
+CMYK 60 50 45 13
+#707173
+
+Blau:
+RGB 31 153 210
+CMYK 75 25 0 0
+#1f99d2
+
+Grün:
+RGB 199 211 44
+CMYK 31 0 90 0
+#c7d32c
+
+Orange:
+RGB 216 125 40
+CMYK 13 59 91 1
+#d87d28
+
+Rot:
+RGB 193 42 28
+CMYK 17 93 100 7
+#c12a1c
