@@ -26,6 +26,25 @@ a:hover {
     color: blue;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    padding-left: 1.5rem;
+    text-indent: -1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+li:before {
+    padding-right: 0.5rem;
+    width: 1rem;
+    overflow: hidden;
+    content: "➤";
+}
+
 body > * {
     flex: 1 1 100%;
 }
@@ -44,18 +63,26 @@ header img {
 header h1 {
     text-align: center;
     flex: 1 1 100%;
+    margin: 0 0 0.25em 0;
 }
 
 section.features {
     box-sizing: border-box;
     padding: 2rem 4rem;
-    background: #c7d32c;
+    background: #1f99d2;
+    color: white;
+}
+
+section.features a,
+section.links a {
+    color: white;
 }
 
 section.links {
     box-sizing: border-box;
     padding: 2rem 4rem;
-    background: #c7d32c;
+    background: #1f99d2;
+    color: white;
 }
 
 section.getstarted button {
@@ -81,23 +108,48 @@ section.support {
     padding: 2rem 4rem;
 }
 
+section.features h2,
+section.links h2 {
+    margin-top: 0;
+}
+
 section.support h2 {
     text-align: center;
+    margin-top: 0;
+}
+
+@media (max-width: 35rem) {
+    section.features {
+        padding-bottom: 1rem;
+    }
+
+    section.links {
+        padding-top: 1rem;
+    }
 }
 
 @media (min-width: 35rem) {
     header {
         display: flex;
+        align-items: center;
+    }
+
+    header img {
+        width: 4rem;
+        height: 5.7rem;
+        padding-right: 4rem;
     }
 
     section.features {
-        order: 1;
+        order: 0;
         flex: 1 1 50%;
+        padding-right: 2rem;
     }
 
     section.links {
-        order: 0;
+        order: 1;
         flex: 1 1 50%;
+        padding-left: 2rem;
     }
 
     section.getstarted {
@@ -106,12 +158,5 @@ section.support h2 {
 
     section.support {
         order: 3;
-    }
-}
-
-@media (min-width: 60rem) {
-    header img {
-        width: 8rem;
-        height: 11.3rem;
     }
 }
