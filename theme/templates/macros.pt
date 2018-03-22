@@ -4,10 +4,3 @@
         For more information about devpi, <a href="https://www.devpi.net">go to www.devpi.net</a>
     </p>
 </metal:info>
-<metal:info define-macro="navigation" use-macro="request.macros['original-navigation']">
-    <div class="infonote" metal:fill-slot="endofheader" tal:condition="request.host.startswith('devpi.net')">
-        The community devpi server is moving to <a href="https://m.devpi.net">https://m.devpi.net</a>.<br />
-        Please update your URLs.<br />
-        Using <code>devpi use</code> with the old URL will redirect to the new location automatically.
-    </div>
-</metal:info>
