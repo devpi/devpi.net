@@ -1,0 +1,5 @@
+[macros.banner]
+template = "banner.pt"
+
+[macros.banner.groups.root]
+before = "user_index_list"
